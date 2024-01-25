@@ -1,0 +1,67 @@
+:root {
+    --font-poppins-sans: 'Poppins', sans-serif;
+    --body-background: #F3F5FC;
+
+    --header-label-background: #000;
+    --header-ball-background: #fff;
+    --header-icon-color: #fff;
+
+
+    --textarea-placeholder-color: #2E19AA;
+    --textarea-text-color: #000;
+    --scrollbar-color: #2E19AA;
+    --scrollbar-color-bacground: #FF9900;
+
+    --main-paragraph-color: #000;
+    --main-button-color: #fff;
+    --main-button-encrypt-background: #2E19AA;
+    --main-button-decrypt-barder:#2E19AA;
+    --main-button-decrypt-color:#2E19AA;
+    
+
+    --aside-background: #fff;
+    --aside-paragraph-color: #000;
+    --aside-title-color:#343A40;
+    --aside-subtitle: #495057;
+    --aside-button-copy-background: #FF9900;
+    --aside-button-copy-color: #fff;
+
+
+    --footer-background: #fff;
+    --footer-color: #000;
+
+}
+
+:root.dark {
+    --body-background: #0B0B0B;
+
+    --header-label-background: #fff;
+    --header-ball-background: #000;
+    --header-icon-color: #000;
+
+
+    --textarea-placeholder-color: #FF9900;
+    --textarea-text-color: #fff;
+    --scrollbar-color: #2E19AA;
+    --scrollbar-color-bacground: #FF9900;
+
+
+    --main-paragraph-color: #F3F5FC;
+    --main-button-color: #fff;
+    --main-button-encrypt-background: #FF9900;
+    --main-button-decrypt-barder:#FF9900;
+    --main-button-decrypt-color:#FF9900;
+    
+
+    --aside-background: #000;
+    --aside-paragraph-color: #fff;
+    --aside-title-color:#fff ;
+    --aside-subtitle: #F3F5FC;
+    --aside-button-copy-background: #2E19AA;
+    --aside-button-copy-color: #fff;
+
+
+    --footer-background: #000;
+    --footer-color: #fff;
+
+}

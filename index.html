@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/img/logo-favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/global.css">
+    <title>Decode Space</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_container">
+            <img class="header__img" src="src/img/Logo.svg" alt="Logo do Decode Space">
+
+            <div class="header__theme">
+                <input type="checkbox" class="header__checkbox js-checkbox" id="checkbox">
+                <label class="header__label" for="checkbox">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="header__ball"></div>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="main__aside__junction">
+            <main class="main__container">
+                <div class="main__container__textarea">
+                    <textarea class="main__textarea js-textarea" placeholder="Digite o seu texto aqui!"></textarea>
+                </div>
+
+                <p class="main__paragraph">
+                    <span class="fa fa-exclamation-circle"></span>
+                    <span>Apenas letras minúsculas e sem acento.</span>
+                </p>
+
+                <div class="main__container__button">
+                    <button class="main__button-encrypt main__button js-btnencrypt ">
+                        <span class="fa fa-lock"></span>
+                        <span>Criptografar</span>
+                    </button>
+                    <button class="main__button-decrypt main__button js-btndecrypt">
+                        <span class="fa fa-unlock"></span>
+                        <span>Descriptografar</span>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="aside">
+                <div class="aside__content">
+                    <p class="aside__text"></p>
+
+                    <div class="aside__initial-message js-initialmessage" >
+                        <img class="aside__image" src="src/img/astronauta-aside.svg"
+                            alt="Personagem animado com uma roupa de astronauta segurando uma lupa.">
+                        <h2 class="aside__title title">Nenhuma mensagem encontrada.</h2>
+                        <h3 class="aside__subtitle title">Digite o texto que você deseja criptografar ou
+                            descriptografar.
+                        </h3>
+                    </div> 
+
+                    <button class="aside__button-copy">
+                        <span class="fa fa-copy"></span>
+                        <span>Copiar</span>
+                    </button>
+
+                </div>
+            </aside>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="footer__paragraph"> Criado por Larissa Carvalho 🤍 | </p>
+        <div class="footer__social-midia">
+            <a href="https://github.com/LarissaCarvalho1" target="_blank"><span class="fa fa-github"></span></a>
+            <a href="https://www.linkedin.com/in/larissa-carvalho-78437a229/" target="_blank"><span class="fa fa-linkedin"></span></a>
+            <a href="https://www.instagram.com/larissa_carvalho___/" target="_blank"><span class="fa fa-instagram"></span></a>
+        </div>
+    </footer>
+
+    <script src="src/js/header.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
