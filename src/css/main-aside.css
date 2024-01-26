@@ -3,7 +3,7 @@
     justify-content: center;
     height: 80vh;
     /* border: solid purple;  */
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
 }
 
 .main .main__aside__junction {
@@ -19,7 +19,7 @@
     width: 60%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .main__container__textarea {
@@ -35,7 +35,7 @@
     resize: none;
     width: 100%;
     height: 55vh;
-    padding: 10px;
+    padding: 0.625rem;
 
     border: none;
     outline: none;
@@ -60,7 +60,7 @@
 }
 
 .main__textarea::-webkit-scrollbar {
-    width: 12px;
+    width: 0.75rem;
 }
 
 .main__textarea::-webkit-scrollbar-track {
@@ -69,12 +69,12 @@
 
 .main__textarea::-webkit-scrollbar-thumb {
     background-color: var(--scrollbar-color);
-    border-radius: 10px;
-    border: 3px solid var(--scrollbar-color-bacground);
+    border-radius: 0.625rem;
+    border: 0.1875rem solid var(--scrollbar-color-bacground);
 }
 
 .main__paragraph {
-    padding-top: 20px;
+    padding-top: 1.25rem;
     font-size: 0.75rem;
 
     font-weight: 400;
@@ -94,12 +94,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
 
     width: 40%;
-    padding: 10px;
+    padding: 0.625rem;
     border: none;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 
     font-size: 1rem;
     color: var(--main-button-color);
@@ -118,7 +118,7 @@
 /*Aside*/
 .aside {
     width: 37%;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 1.875rem 1.875rem 0 0;
     background: var(--aside-background);
 }
 
@@ -135,12 +135,12 @@
     resize: none;
     width: 100%;
     height: 85%;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 1.875rem 1.875rem 0 0;
 
     background: transparent;
     outline: none;
     border: none;
-    padding: 20px;
+    padding: 1.25rem;
 
     color: var(--aside-paragraph-color);
     font-size: 1.1rem;
@@ -153,12 +153,12 @@
 }
 
 .aside__textarea-output::-webkit-scrollbar {
-    width: 10px;
+    width: 0.625rem;
 }
 
 .aside__textarea-output::-webkit-scrollbar-thumb {
     background: var( --scrollbar-color);
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .aside__initial-message {
@@ -170,7 +170,7 @@
 
 .aside__image {
     width: 65%;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .title {
@@ -186,7 +186,7 @@
 .aside__subtitle {
     font-size: 1rem;
     font-weight: 400;
-    margin: 10px;
+    margin: 0.625rem;
     color: var( --aside-subtitle);
 }
 
@@ -194,15 +194,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 0.625rem;
 
     position: sticky;
     bottom: 0;
 
     width: 100%;
     border: none;
-    border-radius: 30px 30px 0px 0px;
-    padding: 15px;
+    border-radius: 1.875rem 1.875rem 0 0;
+    padding: 0.9375rem;
 
     background: var(--aside-button-copy-background);
 
@@ -218,7 +218,7 @@
 
     background: var(--footer-background);
     padding: 1.5%;
-    gap: 5px;
+    gap: 0.3125rem;
     color: var(--footer-color);
 }
 
@@ -229,7 +229,7 @@
 .footer__social-midia a {
     color: var(--footer-color);
     font-size: 1.5rem;
-    padding: 5px;
+    padding: 0.3125rem;
 }
 
 .hidden {
