@@ -6,10 +6,8 @@ function toggleTheme() {
 
     if (checkbox.checked) {
         saveTheme("light");
-        console.log("light");
     } else {
         saveTheme("dark");
-        console.log("dark");
     }
 }
 
