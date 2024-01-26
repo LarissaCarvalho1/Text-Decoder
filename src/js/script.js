@@ -38,7 +38,7 @@ function captureText(action) {
     if (action === 'decrypt') return decryptText(capturedInput);
 }
 
-function decryptText(capturedInput){
+function decryptText(capturedInput) {
 
     const matchingkeys = {
         'ai': 'a',
@@ -52,7 +52,7 @@ function decryptText(capturedInput){
     displayText(decrypto);
 }
 
-function displayText(text){
+function displayText(text) {
     resultDisplay.innerHTML = text;
 
     if (resultDisplay.innerHTML === '') {
@@ -60,36 +60,42 @@ function displayText(text){
     } else {
         inicialMessage.classList.add('hidden');
     }
-    
+
 }
 
 function copyText() {
-    const paragraph = resultDisplay.innerHTML; 
+    const paragraph = resultDisplay.innerHTML;
 
     if (paragraph !== '') {
-        navigator.clipboard.writeText(paragraph).then(() => {
-            pasteText();
-            clearParagraph();
+        navigator.clipboard.writeText(paragraph)
+            .then(() => {
+                alert("Texto copiado para a área de transferência!");
 
-        }).catch(error => {
-            console.error('Erro ao copiar texto:', error);
-        });
+                // Adicionando um pequeno atraso antes de chamar pasteText
+                setTimeout(() => {
+                    pasteText();
+                }, 100);
+
+                clearParagraph();
+            })
+            .catch(() => {
+                alert("Erro inesperado ao copiar texto. Seu navegador pode não ser compatível com essa ação.");
+            });
     }
 }
 
 async function pasteText() {
     try {
         const valor = await navigator.clipboard.readText();
-        textArea.value = valor; 
-
-    } catch (error) {
-        console.error('Erro ao colar texto:', error);
+        textArea.value = valor;
+    } catch {
+        alert("Erro inesperado ao colar texto. Seu navegador pode não ser compatível com essa ação.");
     }
 }
 
-function clearParagraph(){
+function clearParagraph() {
     resultDisplay.innerHTML = '';
-    
+
     showInitialMesage();
 }
 
