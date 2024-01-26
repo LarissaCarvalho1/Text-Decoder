@@ -35,6 +35,8 @@
     background: var(--header-label-background);
     border-radius: 3.125rem;
     cursor: pointer;
+    border: 0.125rem solid var(--aside-button-copy-background);
+    box-shadow: 0.0625rem 0.0625rem 0.3125rem var(--aside-button-copy-background);
 }
 
 .header__ball {
@@ -52,7 +54,7 @@
 }
 
 .header__checkbox:checked+.header__label .header__ball {
-    transform: translateX(2.625rem);
+    transform: translateX(2.4rem);
 }
 
 .fas {

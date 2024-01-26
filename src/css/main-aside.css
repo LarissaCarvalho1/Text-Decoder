@@ -2,12 +2,10 @@
     display: flex;
     justify-content: center;
     height: 80vh;
-    /* border: solid purple;  */
-    margin-bottom: 0.9375rem;
+    margin: 1rem 0;
 }
 
 .main .main__aside__junction {
-    /* border: solid black; */
     display: flex;
     justify-content: space-between;
 
@@ -15,7 +13,6 @@
 }
 
 .main__container {
-    /* border: solid green; */
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -23,7 +20,6 @@
 }
 
 .main__container__textarea {
-    /* border: solid goldenrod;  */
     background-image: url(/src/img/background03.svg);
     background-size: cover;
     background-position: right top;
@@ -86,8 +82,6 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
-    /* border: solid red; */
 }
 
 .main__button {
@@ -110,7 +104,7 @@
 }
 
 .main__button-decrypt {
-    border: solid var(--main-button-decrypt-barder);
+    border:  0.125rem solid var(--main-button-decrypt-barder);
     color: var(--main-button-decrypt-color);
 }
 
@@ -120,6 +114,8 @@
     width: 37%;
     border-radius: 1.875rem 1.875rem 0 0;
     background: var(--aside-background);
+    border: 0.125rem solid var(--aside-button-copy-background);
+    box-shadow: 0.0625rem 0.0625rem 0.3125rem var(--aside-button-copy-background);
 }
 
 .aside__content {
@@ -129,6 +125,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
+
 }   
 
 .aside__textarea-output {
@@ -145,11 +142,12 @@
     color: var(--aside-paragraph-color);
     font-size: 1.1rem;
     font-weight: 400;
+
 }
 
 .aside__textarea-output {
     scrollbar-width: thin;
-    scrollbar-color: var( --scrollbar-color) var(--scrollbar-color-bacground);
+    scrollbar-color: transparent transparent; 
 }
 
 .aside__textarea-output::-webkit-scrollbar {
@@ -157,8 +155,12 @@
 }
 
 .aside__textarea-output::-webkit-scrollbar-thumb {
-    background: var( --scrollbar-color);
+    background: transparent; 
     border-radius: 0.625rem;
+}
+
+.aside__textarea-output::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 .aside__initial-message {
@@ -217,7 +219,7 @@
     justify-content: center;
 
     background: var(--footer-background);
-    padding: 1.5%;
+    padding: 2%;
     gap: 0.3125rem;
     color: var(--footer-color);
 }
