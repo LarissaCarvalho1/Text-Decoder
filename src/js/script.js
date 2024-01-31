@@ -1,8 +1,8 @@
 const textArea = document.querySelector('.js-textarea');
-const buttonEncrypt = document.querySelector('.js-btnencrypt'); /*Criptografar*/
+const buttonEncrypt = document.querySelector('.js-btnencrypt'); 
 const buttonDecrypt = document.querySelector('.js-btndecrypt');
-const resultDisplay = document.querySelector('.js-display'); /*Paragrafo */
-const inicialMessage = document.querySelector('.js-initialmessage'); /*Imagem / mensagem inicial*/
+const resultDisplay = document.querySelector('.js-display'); 
+const inicialMessage = document.querySelector('.js-initialmessage');
 const buttonCopy = document.querySelector('.js-buttoncopy');
 
 
@@ -22,7 +22,7 @@ function encryptText(capturedInput) {
 
 function captureText(action) {
 
-    resultDisplay.classList.remove('hidden');
+    // resultDisplay.classList.remove('hidden');
 
     const capturedInput = (textArea.value).toLowerCase();
 
@@ -33,9 +33,17 @@ function captureText(action) {
         return false;
     }
 
-    if (action === 'encrypt') return encryptText(capturedInput);
+    if (action === 'encrypt') {
+        encryptText(capturedInput);
+        resultDisplay.classList.remove('hidden');
+        clearTextarea();
+    } 
 
-    if (action === 'decrypt') return decryptText(capturedInput);
+    if (action === 'decrypt') {
+        decryptText(capturedInput);
+        resultDisplay.classList.remove('hidden');
+        clearTextarea();
+    } 
 }
 
 function decryptText(capturedInput) {
@@ -91,6 +99,10 @@ async function pasteText() {
     } catch {
         alert("Erro inesperado ao colar texto. Seu navegador pode não ser compatível com essa ação.");
     }
+}
+
+function clearTextarea(){
+    textArea.value = '';
 }
 
 function clearParagraph() {
